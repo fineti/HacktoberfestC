@@ -1,8 +1,10 @@
 public abstract class Animal {
     private String name;
+    private float age;
 
-    public Animal(String name) {
+    public Animal(String name, float age) {
         this.name = name;
+        this.age = age;
     }
 
     public String getName() {
@@ -11,6 +13,14 @@ public abstract class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public float getAge() {
+        return age;
+    }
+
+    public void setAge(float age) {
+        this.age = age;
     }
 
     public abstract String talk();
